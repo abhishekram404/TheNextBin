@@ -1,7 +1,7 @@
 import Axios from "axios";
 import React from "react";
 import { Redirect, BrowserRouter as Router } from "react-router-dom";
-
+import "./Create.css";
 class CreateBlog extends React.Component {
   constructor() {
     super();
@@ -41,7 +41,7 @@ class CreateBlog extends React.Component {
         {this.state.redirect ? (
           <Redirect to="/home" />
         ) : (
-          <div className="container" style={{ maxWidth: "60%" }}>
+          <div className="container">
             <div className="card my-3 py-4">
               <div className="h3 text-center bg-">Create a post</div>
               <hr />

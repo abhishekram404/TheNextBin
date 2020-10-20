@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./Home.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
@@ -34,7 +34,7 @@ class Home extends React.Component {
 
   render(props) {
     return (
-      <div className="container p-3" style={{ maxWidth: "60%" }}>
+      <div className="container p-3">
         <Link to="/create" className="btn btn-info btn-block my-2">
           Post a Blog
         </Link>
@@ -44,12 +44,14 @@ class Home extends React.Component {
             <hr />
             <div
               className="blog-posts"
-              style={{
-                // display: "grid",
-                // gridTemplateColumns: "50% 50%",
-                // gridAutoRows: "minmax(min-content, max-content)",
-                columnCount: "2",
-              }}
+              style={
+                {
+                  // display: "grid",
+                  // gridTemplateColumns: "50% 50%",
+                  // gridAutoRows: "minmax(min-content, max-content)",
+                  // columnCount: "2",
+                }
+              }
             >
               {this.state.blogList.map((post) => (
                 <Post

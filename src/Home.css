@@ -1,0 +1,17 @@
+.container {
+  width: 60%;
+}
+.blog-posts {
+  display: grid;
+  /* grid-template-columns: 50% 50%; */
+  /* column-count: 2; */
+}
+
+@media only screen and (max-width: 730px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+}

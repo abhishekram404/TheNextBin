@@ -7,12 +7,12 @@ class Post extends React.Component {
   render() {
     return (
       <div
-        className="post card mt-2 mx-1 pb-2"
-        style={{
-          display: "inline-block",
-          maxWidth: "350px",
-          minWidth: "350px",
-        }}
+        className="post card mt-2 mx-1 pb-1"
+        // style={{
+        //   display: "inline-block",
+        //   maxWidth: "350px",
+        //   minWidth: "350px",
+        // }}
       >
         <div className="card-body">
           <div className="card-title h5" style={{ fontFamily: "Montserrat" }}>
@@ -29,7 +29,7 @@ class Post extends React.Component {
           </div>
           <Link
             to={`/blog/${this.props.data.id}`}
-            className="btn btn-sm btn-outline-primary float-right mt-2"
+            className="btn btn-sm btn-outline-primary float-right mt-4"
           >
             Read More
           </Link>

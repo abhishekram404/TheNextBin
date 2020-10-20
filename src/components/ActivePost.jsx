@@ -50,7 +50,7 @@ function ActivePost({ match }) {
       {redirect ? (
         <Redirect to="/home" />
       ) : (
-        <div className="container" style={{ maxWidth: "60%" }}>
+        <div className="container">
           <div className="card my-3 px-4 pb-4">
             <div className="card-body">
               {editMode ? (
